@@ -100,33 +100,81 @@ class Ticket extends Component {
                 })
             })
         })
-        if(originalId === 's1') {
-            if(this.state.ticketBought) {
-                notification.info({
-                    message: 'Slots changed!',
-                    description: 'Please note that Placement Training Workshop is available in the slot 1 PM - 4:30 PM.',
-                    placement: 'topRight',
-                    duration: 0,
-                    top: 10,
-                    style: {
-                        backgroundColor: 'white',
-                        fontWeight: 'bold',
-                        fontFamily: 'Lato'
-                    }
-                })
-            }
-		}
+        // if(originalId === 's1') {
+        //     if(this.state.ticketBought) {
+        //         notification.info({
+        //             message: 'Slots changed!',
+        //             description: 'Please note that Placement Training Workshop is available in the slot 1 PM - 4:30 PM.',
+        //             placement: 'topRight',
+        //             duration: 0,
+        //             top: 10,
+        //             style: {
+        //                 backgroundColor: 'white',
+        //                 fontWeight: 'bold',
+        //                 fontFamily: 'Lato'
+        //             }
+        //         })
+        //     }
+		// }
 	}
 	
 	onRadioChange = e => {this.setState({ radio: e.target.value })}
 
-    handlePurchase = () => {
-		let { amount, userId, originalId, radio } = this.state
+    // handlePurchase = () => {
+	// 	let { amount, userId, originalId, radio } = this.state
+	// 	const userID = userId.toString()
+	// 	const appendedString = `250z${userID}`
+	// 	let encryptedString = AES.encrypt(appendedString, 'firebase')
+	// 	let firstPart = encryptedString.toString().substr(0,3)
+	// 	let remainingPart = encryptedString.toString().substr(3)
+	// 	if(originalId === 's1') {
+	// 		if(!radio) {
+	// 			notification.warning({
+	// 				message: 'Oops',
+	// 				description: 'You need to choose the purpose of buying your Samhita ticket!',
+	// 				placement: 'topRight',
+	// 				duration: 3,
+	// 				style: {
+	// 					backgroundColor: 'white',
+	// 					fontWeight: 'bold',
+	// 					fontFamily: 'Lato'
+	// 				}
+	// 			})
+	// 		} else {
+	// 			document.querySelector('.purchase-button').classList.add('is-loading')
+	// 			document.querySelector('.purchase-button').disabled = true
+	// 			let samhitaString
+	// 			if(radio === 1) {
+	// 				samhitaString = `${firstPart}${amount}${remainingPart}${userID}s9`
+	// 			} else if(radio === 2) {
+	// 				samhitaString = `${firstPart}${amount}${remainingPart}${userID}${originalId}`
+	// 			} 
+	// 			window.location.assign(`http://localhost:3000/paywithrazorpay?redirect=${samhitaString}`)
+	// 		}
+	// 	} else {
+	// 		document.querySelector('.purchase-button').classList.add('is-loading')
+	// 		document.querySelector('.purchase-button').disabled = true
+	// 		let samhitaString = `${firstPart}${amount}${remainingPart}${userID}${originalId}` 
+	// 		window.location.assign(`http://localhost:3000/paywithrazorpay?redirect=${samhitaString}`)
+	// 	}
+    // }
+
+    // initPayment = (data) =>{
+    //     const option={
+    //         key:"",
+    //         amount: data.amount,
+    //         curreny: "INR",
+    //         name: ,
+    //         description: ,
+    //         order_id:
+
+    //     }
+    // }
+
+
+    handlePurchase = async ()=>{
+        let { amount, userId, originalId, radio } = this.state
 		const userID = userId.toString()
-		const appendedString = `250z${userID}`
-		let encryptedString = AES.encrypt(appendedString, 'firebase')
-		let firstPart = encryptedString.toString().substr(0,3)
-		let remainingPart = encryptedString.toString().substr(3)
 		if(originalId === 's1') {
 			if(!radio) {
 				notification.warning({
@@ -141,23 +189,37 @@ class Ticket extends Component {
 					}
 				})
 			} else {
-				document.querySelector('.purchase-button').classList.add('is-loading')
-				document.querySelector('.purchase-button').disabled = true
-				let samhitaString
-				if(radio === 1) {
-					samhitaString = `${firstPart}${amount}${remainingPart}${userID}s9`
-				} else if(radio === 2) {
-					samhitaString = `${firstPart}${amount}${remainingPart}${userID}${originalId}`
-				} 
-				window.location.assign(`https://samhita-backend.herokuapp.com/paywithrazorpay?redirect=${samhitaString}`)
+                console.log("amount:"+ amount);
+				// document.querySelector('.purchase-button').classList.add('is-loading')
+				// document.querySelector('.purchase-button').disabled = true
+				const orderUrl ="http://localhost:4000/orders";
+                const {data} = await axios.post(orderUrl,{amount: amount});
+                // initPayment(data.data);
+                console.log(data);
 			}
 		} else {
-			document.querySelector('.purchase-button').classList.add('is-loading')
-			document.querySelector('.purchase-button').disabled = true
-			let samhitaString = `${firstPart}${amount}${remainingPart}${userID}${originalId}` 
-			window.location.assign(`https://samhita-backend.herokuapp.com/paywithrazorpay?redirect=${samhitaString}`)
+			// document.querySelector('.purchase-button').classList.add('is-loading')
+			// document.querySelector('.purchase-button').disabled = true
+			const orderUrl ="http://localhost:4000/orders";
+            const {data} = await axios.post(orderUrl,{amount: amount});
+            // initPayment(data.data);
+            console.log(data);
 		}
     }
+
+    // handlePayment = async () => {
+	// 	try {
+    //         let { amount, userId, originalId, radio } = this.state
+	//     	const userID = userId.toString()
+	// 		const orderUrl = "http://localhost:4000/orders";
+	// 		const { data } = await axios.post(orderUrl, { amount: amount });
+	// 		console.log(data);
+    //         console.log(amount);
+	// 		// initPayment(data.data);
+	// 	} catch (error) {
+	// 		console.log(error);
+	// 	}
+	// };
 
     render() {
         const { isLoading, ticketBought, originalId, userData, radio } = this.state
@@ -333,7 +395,7 @@ class Ticket extends Component {
 								<>
 									<div className = 'columns'>
                                         <div className = 'column'>
-											<div className = 'title is-6 has-text-centered has-text-link is-lato'>What do you wish to attend on buying Samhita '20 ticket?</div>
+											<div className = 'title is-6 has-text-centered has-text-link is-lato'>What do you wish to attend on buying Samhita '22 ticket?</div>
                                             <RadioGroup className = 'has-text-left is-lato' onChange = {this.onRadioChange} value = {radio}>
                                                 <Radio style = {{display: 'block', height: '30px'}} value={2}>
                                                     <span className = 'is-size-6'>Events + Placement Workshop</span>

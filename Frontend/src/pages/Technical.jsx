@@ -88,7 +88,7 @@ class Technical extends Component {
                                             <li>• Problem statements are given at the end of rules.</li>
                                             <li>• Purchase of Samhita ticket for entry is mandatory.</li>
                                             <li>• Time for solving the problems are between 17<sup>th</sup> and 22<sup>th</sup> of April 2020.</li>
-                                            <li>• The shortlisted teams must prepare a PPT and present it on January 23<sup>rd</sup> at Samhita '22.</li>
+                                            <li>• The shortlisted teams must prepare a PPT and present it on April 23<sup>rd</sup> at Samhita '22.</li>
                                         </ul>
                                         <button className = 'button is-lato is-link is-rounded' style = {{margin: '12px 0px'}} onClick = {() => this.setDrawerVisible(true)}>Problem statements</button>
                                         <Drawer                                                  
@@ -257,7 +257,7 @@ class Technical extends Component {
                                     date = {<><span>23<sup>rd</sup> April, 2022</span></>}
                                     fullTime
                                     size = {3}
-                                    description = "Research is exploring the unexplored and presenting a whole phenomenal idea to the world. Come to Samhita '20 and present your innovative ideas and win prizes upto 5K!"
+                                    description = "Research is exploring the unexplored and presenting a whole phenomenal idea to the world. Come to Samhita '22 and present your innovative ideas and win prizes upto 5K!"
                                     contactName = 'Aditi Narendran'
                                     contactNumber = {<><a href = 'tel:+917358333413'>+91 7358333413</a></>} 
                                 >
@@ -265,7 +265,7 @@ class Technical extends Component {
                                         <ul>
                                             <li>• Paper must be in IEEE format.</li>
                                             <li>• Papers must be submitted to <a href = 'mailto: papers@samhita.org.in'>papers@samhita.org.in</a> before 22/04/2022</li>
-                                            <li>• Mail should contain the unique Samhita ID received on purchase of Samhita '20 ticket.</li>
+                                            <li>• Mail should contain the unique Samhita ID received on purchase of Samhita '22 ticket.</li>
                                             <li>• Plagiarism of any kind is strictly prohibited.</li>
                                             <li style = {{marginTop: '10px'}}><strong>Note: One Samhita ticket is enough for participation of a team consisting three members. But only one certificate will be issued for the person who has purchased Samhita ticket (Certificate will contain the names of all three members). Seperate tickets should be bought for individual certificates.</strong></li>
                                         </ul>
@@ -325,7 +325,7 @@ class Technical extends Component {
                                     onsite 
                                     avatar = {Codegolfing} 
                                     title = 'Code Golfing' 
-                                    date= {<><span>1<sup>st</sup> February, 2020</span></>}
+                                    date= {<><span>24<sup>th</sup> April, 2022</span></>}
                                     prelims = '9 AM - 12 PM'
                                     finals = '1 PM - 4:30 PM'
                                     size = {2} 
@@ -397,8 +397,8 @@ class Technical extends Component {
                             <LazyLoadComponent>
                                 <Event 
                                     onsite 
-                                    avatar = {TechQuiz} 
-                                    title = 'Tech Quiz' 
+                                    avatar = {TechTravel} 
+                                    title = 'Tech Travel' 
                                     date = {<><span>23<sup>rd</sup> April, 2022</span></>}
                                     prelims = '9 AM - 1 PM'
                                     finals = '2 PM - 4:30 PM'

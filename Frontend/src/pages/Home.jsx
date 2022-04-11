@@ -36,6 +36,8 @@ import Dealshare from '../assets/Sponsors/Dealshare.png'
 import OnlinemediaPartnerImage2 from '../assets/Sponsors/Blacksheep1.png'
 import Vaayusheshtra from '../assets/Sponsors/Vaayusheshtra.png'
 import carousel1 from '../assets/carousel1.png'
+import carousel2 from '../assets/carousel2.png'
+import carousel3 from '../assets/carousel3.png'
 
 class Home extends Component {
 
@@ -115,7 +117,7 @@ class Home extends Component {
                                                 </div>
                                         </div>
                                         <div class="item">
-                                            <img src={kissflow} alt="Chicago" />
+                                            <img src={carousel2} alt="Chicago" />
                                                 <div class="carousel-caption">
                                                     {/* <h3>Chicago</h3>
                                                     <p>Thank you, Chicago!</p> */}
@@ -123,7 +125,7 @@ class Home extends Component {
                                         </div>
 
                                         <div class="item">
-                                            <img src={Tekion} alt="New York" />
+                                            <img src={carousel3} alt="New York" />
                                                 <div class="carousel-caption">
                                                     {/* <h3>New York</h3>
                                                     <p>We love the Big Apple!</p> */}
@@ -200,7 +202,7 @@ class Home extends Component {
                             <div className = 'columns' style={{paddingBottom:'10px',paddingTop:'10px'}}>
                                 <div className = 'column is-7'>
                                     <div className='hovero'>
-                                        <img data-aos = 'fade-right'style={{height:'380px',width:'900px'}} id = 'ticket-section'  src = {SamhitaTicket} alt= "Samhita '22 ticket" />
+                                        <img data-aos = 'fade-right'style={{height:'580px',width:'1300px'}} id = 'ticket-section'  src = {SamhitaTicket} alt= "Samhita '22 ticket" />
                                     </div></div>
                                     <div className='column is-5'>
                                         <br/>
@@ -208,7 +210,7 @@ class Home extends Component {
                                     <div data-aos = 'fade-right' className = 'field'>
                                         <div className = 'control'>
                                             <div className = 'benefits-title' style={{color:'white'}}>
-                                                <span style={{fontSize:'28px',fontFamily:'Roboto'}}>Ticket benefits include:</span>
+                                                <span style={{fontSize:'28px',fontFamily:'Roboto'}}><br/><br/>Ticket benefits include:</span>
                                             <ul className = 'benefits-list' style={{fontSize:'20px'}}>
                                                 <li style={{listStyleType:'disc'}}>Chance to participate in all technical and non-technical events</li>
                                                 <li style={{listStyleType:'disc'}}>Attend Placement training workshop </li>

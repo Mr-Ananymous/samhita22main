@@ -132,13 +132,13 @@ class Profile extends Component {
                             </View>
                         </View>
                         <View style = {{display: 'flex', flexDirection: 'row'}}>
-                            <Text style = {{fontSize: '16pt', margin: '10px 0px', flexBasis: '80%'}}>For queries, Contact: +91 9698210512</Text>
+                            <Text style = {{fontSize: '16pt', margin: '10px 0px', flexBasis: '80%'}}>For queries, Contact: +91 8608998568</Text>
                             {/* <Text style = {{fontSize: '16pt', margin: '10px 0px', flexBasis: '20%', textAlign: 'right'}}>{date}</Text> */}
                         </View>
-                        <Text style = {{fontSize: 26, fontWeight: "bold", color: '#ca0000', marginBottom: '15px'}}>Samhita '20 Workshops Receipt</Text>
+                        <Text style = {{fontSize: 26, fontWeight: "bold", color: '#ca0000', marginBottom: '15px'}}>Samhita '22 Workshops Receipt</Text>
                         <Text style = {{fontSize: 22, fontWeight: "bold", color: '#black'}}>Hi {name}!</Text>
                         <Text style = {{fontSize: 22, fontWeight: "bold", color: '#black', marginBottom: '15px'}}>ID: {userId}</Text>
-                        <Text style = {{fontSize: 20, margin: '15px 0px'}}>Here is the list of workshops you have bought for Samhita '20</Text>
+                        <Text style = {{fontSize: 20, margin: '15px 0px'}}>Here is the list of workshops you have bought for Samhita '22</Text>
                         {/* <Text style = {{fontSize: '16pt', margin: '10px 0px'}}>Note: All workshop participants except those who are attending Placement Training workshop should bring their own laptops. For more information, visit samhita.org.in</Text> */}
                             <View>
                                 {
@@ -178,7 +178,7 @@ class Profile extends Component {
         return (
             <React.Fragment>
                 <Helmet>
-                    <title>Samhita 20 - My account</title>
+                    <title>Samhita 22 - My account</title>
                 </Helmet>
                 <Navbar name =  'account'/>
                 <section className = 'section profile-outer-container'>
@@ -192,13 +192,13 @@ class Profile extends Component {
 
                                             <div style = {{margin: '2rem 0px'}}>
                                                 <div className = 'is-hidden-mobile avatar-container'>
-                                                    <Avatar size = {145} style = {{backgroundColor: '#FF0A13', boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)'}}>
+                                                    <Avatar size = {145} style = {{backgroundColor: '#1d9c9c', boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)'}}>
                                                         <Spin indicator = {loadingIcon} style = {{color: 'white'}}/>
                                                     </Avatar>
                                                 </div>
                                                 <div className = 'is-hidden-tablet has-text-centered' style = {{display: 'flex'}}>
                                                     <div style = {{marginRight: '22px'}}>
-                                                        <Avatar size = {105} style = {{backgroundColor: 'red', boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)'}}>
+                                                        <Avatar size = {105} style = {{backgroundColor: '#1d9c9c', boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)'}}>
                                                             <Spin indicator = {loadingIcon} style = {{color: 'white'}} />
                                                         </Avatar>
                                                     </div>                      
@@ -325,7 +325,7 @@ class Profile extends Component {
                                     <div className = 'has-text-centered'>
                                         <LazyLoadImage className = 'bought-ticket-image' src = {PaidImage} effect = 'blur' alt = 'Bought ticket' />
                                         <div className = 'title is-3 is-lato has-text-centered' style = {{color: '#2E9D00'}}>
-                                            You have bought your Samhita '20 ticket!
+                                            You have bought your Samhita '22 ticket!
                                         </div>
                                         <div className = 'title is-5 is-lato has-text-centered'>
                                             (You are now eligible to attend all technical and non-technical events along with  
@@ -349,7 +349,7 @@ class Profile extends Component {
                                     <div className = 'has-text-centered'>
                                         <LazyLoadImage className = 'bought-ticket-image' src = {NotPaidImage} effect = 'blur' alt = 'Not bought ticket' />
                                         <div className = 'subtitle is-5 is-lato has-text-left '>
-                                            You have not purchased your Samhita '20 ticket yet. Buy now to get access to all technical and non-technical events.
+                                            You have not purchased your Samhita '22 ticket yet. Buy now to get access to all technical and non-technical events.
                                         </div>
                                         <button className = 'button is-lato has-text-weight-semibold is-rounded is-danger' onClick = {() => this.props.history.push(`/checkout/${encryptedId}`)}>
                                             Get ticket

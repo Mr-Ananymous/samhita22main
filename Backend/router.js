@@ -117,11 +117,11 @@ var PORT = process.env.PORT || 4000;
 // });
 
 
-app.post('/paywithrazorpay',async function(req, res, next){
+app.post("/orders",async (req, res)=>{
     try{
         const instance = new Razorpay({
-            key_id: process.env.KEY_ID,
-            key_secret: process.env.KEY_SECRET,
+            key_id: "rzp_test_nUCXqMO9VGviQX",
+            key_secret: "vZzKDbDILXtXGgfW0mcdDd2U",
         });
         const option={
             amount : req.body.amount*100,
@@ -142,6 +142,27 @@ app.post('/paywithrazorpay',async function(req, res, next){
     }
 });
 
+app.post("/verify",async(req,res)=>{
+    try{
+        const{
+            razorpay_order_id,
+            razorpay_payment_id,
+            razorpay_signature}= req.body;
+            const sign = razorpay_order_id + "|" + razorpay_payment_id;
+            const expectedSign = crypto.createHmac("sha256",process.env.KEY_SECRET)
+            .update(sign.toString())
+            .digest("hex");
+
+            if(razorpay_signature === expectedSign){
+                return res.status(200).json({message:"Payment verified successfully"});
+            }else{
+                return res.status(400).json({message:"Invalid signature sent!"});
+            }
+        } catch(error){
+            console.log(error);
+            res.status(500).json({message:"Internal Server Error!"});
+        }
+    });
 
 app.post('/response',function(req, res, next){
     let red=req.body.txStatus

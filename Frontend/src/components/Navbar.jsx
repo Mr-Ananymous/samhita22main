@@ -37,7 +37,7 @@ class Navbar extends Component {
                     <img style = {{cursor: 'pointer',height:'40px',width:'auto'}} onClick = {() => this.redirect('/')} className = 'logo' src = {Logo} alt = "Samhita '20 Logo"/>
                     </div>
                     <div className = 'navbar-item is-hidden-desktop' style = {{alignSelf: 'flex-start', flexBasis: '80%'}}>
-                        <img style = {{cursor: 'pointer'}} onClick = {() => this.redirect('/')} className = 'logo' src = {Logo} alt = "Samhita '20 Logo"/>
+                        <img style = {{cursor: 'pointer'}} onClick = {() => this.redirect('/')} className = 'logo' src = {Logo} alt = "Samhita '22 Logo"/>
                     </div>
                     <div className = 'navbar-item login-shortcut is-hidden-tablet' style = {{cursor: 'pointer', justifySelf: 'center', alignSelf: 'center'}} onClick = {() => this.props.history.push('/login')}>
                         <FontAwesomeIcon className = 'is-size-3' style = {{marginLeft: 'auto', marginRight: 'auto'}} icon = {faSignInAlt} color = 'gray'/>

@@ -30,7 +30,7 @@ class Contact extends Component {
         return (
             <div>
                 <Helmet>
-                    <title>Samhita 20 - Contact us</title>
+                    <title>Samhita 22 - Contact us</title>
                 </Helmet>
                 <Navbar name = 'contact'/>
                 <section className = 'section contact-outer-container'>
