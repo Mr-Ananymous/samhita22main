@@ -210,7 +210,7 @@ class Profile extends Component {
 
                                             <React.Fragment>
                                                 <div style = {{display: 'flex', margin: '2rem 0px'}}>
-                                                    <div className = 'avatar profile-header is-hidden-mobile avatar-container' style = {{display: 'flex', flexDirection: 'column', width: 145, height: 145, borderRadius: '50%', backgroundColor: 'red', alignItems: 'center', wordWrap: 'break-word', padding: '15px', boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)', alignSelf: 'center', justifySelf: 'center'}}>
+                                                    <div className = 'avatar profile-header is-hidden-mobile avatar-container' style = {{display: 'flex', flexDirection: 'column', width: 145, height: 145, borderRadius: '50%', backgroundColor: '#1d9c9c', alignItems: 'center', wordWrap: 'break-word', padding: '15px', boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)', alignSelf: 'center', justifySelf: 'center'}}>
                                                         <img src = {ProfilePicture} alt = 'Profile' style = {{position: 'relative', zIndex:0, transform: 'scale(1.2)', top: '5px'}}/>
                                                         <span className = 'is-uppercase is-lato' style = {{position: 'relative', zIndex: 1, bottom: 55, fontWeight: 700, fontSize: '14px', color: 'white', marginLeft: 'auto', marginRight: 'auto', wordWrap: 'break-word'}}>
                                                             Hi {firstName}
@@ -351,7 +351,7 @@ class Profile extends Component {
                                         <div className = 'subtitle is-5 is-lato has-text-left '>
                                             You have not purchased your Samhita '22 ticket yet. Buy now to get access to all technical and non-technical events.
                                         </div>
-                                        <button className = 'button is-lato has-text-weight-semibold is-rounded is-danger' onClick = {() => this.props.history.push(`/checkout/${encryptedId}`)}>
+                                        <button className = 'button is-lato has-text-weight-semibold is-rounded ' style={{background:"#1d9c9c"}} onClick = {() => this.props.history.push(`/checkout/${encryptedId}`)}>
                                             Get ticket
                                         </button>
                                     </div>
