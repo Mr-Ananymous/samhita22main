@@ -190,7 +190,7 @@ class Ticket extends Component {
 			key: "rzp_test_h3jaqLG39VxWwP",
 			amount: data.amount,
 			currency: data.currency,
-			name: "SAMHITA",
+			name: "SAMHITA'22",
 			description: "#DREAMIT_DOIT",
 			order_id: data.id,
 			handler: async (response) => {
@@ -417,7 +417,7 @@ class Ticket extends Component {
                                         originalId === 'a1' ?
 
                                         <tr className = 'checkout-detail-row'>
-                                            <th style = {{border: '1.5px solid #0071BC'}} className = 'has-text-centered'>Android App Development Workshop</th>
+                                            <th style = {{border: '1.5px solid #0071BC'}} className = 'has-text-centered'>Introduction to ReactNative and Expo Tool Hands On</th>
                                             <th style = {{border: '1.5px solid #0071BC'}} className = 'has-text-centered'>Admit: 1</th>
                                             <th style = {{border: '1.5px solid #0071BC'}} className = 'has-text-centered'>Price: ₹ 799</th>
                                         </tr>

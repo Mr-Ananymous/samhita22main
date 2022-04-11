@@ -256,7 +256,7 @@ class Workshops extends Component {
                                 <div className = 'field upper'>
                                     <div className = 'control'>
                                         <div className = 'title is-2 is-lato workshop-title'>
-                                            Introduction to ReactNative and Expo tool Hands on
+                                            Introduction to ReactNative and Expo Tool Hands On
                                         </div>
                                     </div>
                                     <div className = 'control is-pulled-right' style = {{margin: '20px 0px 0px 0px'}}>
@@ -376,7 +376,7 @@ class Workshops extends Component {
                                         </div>
                                         <div className = 'field is-grouped'>
                                             <div className = 'control has-icons-right'>
-                                                <button className = 'button is-rounded is-link has-text-weight-semibold is-lato' disabled onClick = {() => this.handleWorkshopPayment('a1')}>
+                                                <button className = 'button is-rounded is-link has-text-weight-semibold is-lato'  onClick = {() => this.handleWorkshopPayment('a1')}>
                                                     BUY
                                                 </button><p style={{fontSize:'18px',color:'red'}}><sup>*</sup>Registration opens Soon.</p>
                                             </div>

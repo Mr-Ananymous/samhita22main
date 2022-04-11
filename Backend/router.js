@@ -124,14 +124,15 @@ app.post("/orders", async (req, res) => {
 			key_id: "rzp_test_h3jaqLG39VxWwP",
 			key_secret: "dl453MHchKT72iZeGyMMPZGZ",
 		});
-        if (req.body.amount== 'dl*')
+        if (req.body.amount == 'dl*')
             amount = 250
         if (req.body.amount == 'qp-')
-            amount= 750
+            amount = 750
         if (req.body.amount == 'wb%')
-            amount= 850
+            amount = 850
         if (req.body.amount == 'yo@')
-            amount= 800
+            amount = 799
+        console.log(amount);
 		const options = {
 			amount: amount * 100,
 			currency: "INR",
