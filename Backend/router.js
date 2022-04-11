@@ -5,6 +5,7 @@ const crypto    = require('crypto');
 const bodyParser = require('body-parser')
 const app = express()
 const object = require('./Functions')
+const razor = require('razorpay')
 
 app.use(cors())
 app.use(bodyParser.json())
@@ -116,31 +117,58 @@ var PORT = process.env.PORT || 4000;
 // 	res.render('request',{postData : JSON.stringify(postData),url : url});
 // });
 
+app.post("/orders", async (req, res) => {
+	try {
+		const instance = new razor({
+			key_id: "rzp_test_h3jaqLG39VxWwP",
+			key_secret: "dl453MHchKT72iZeGyMMPZGZ",
+		});
+        console.log(req.body.amount);
+		const options = {
+			amount: 5000,
+			currency: "INR",
+			receipt: crypto.randomBytes(10).toString("hex"),
+		};
 
-app.post("/orders",async (req, res)=>{
-    try{
-        const instance = new Razorpay({
-            key_id: "rzp_test_nUCXqMO9VGviQX",
-            key_secret: "vZzKDbDILXtXGgfW0mcdDd2U",
-        });
-        const option={
-            amount : req.body.amount*100,
-            currency:"INR",
-            receipt: crypto.randomBytes(10).toString("hex"),
-        };
-
-        instance.orders.create(options,(error,order)=>{
-            if(error){
-                console.log(error);
-                return res.status(500).json({message:"Something went wrong"});
-            }
-            res.status(200).json({data:order});
-        });
-    }catch(error){
-        console.log(error);
-        res.status(500).json({message:"Internal Server Error"});
-    }
+		instance.orders.create(options, (error, order) => {
+			if (error) {
+				console.log(error);
+				return res.status(500).json({ message: "HII" });
+			}
+			res.status(200).json({ data: order });
+		});
+	} catch (error) {
+		res.status(500).json({ message: "Internal Server Error!" });
+		console.log(error);
+	}
 });
+// app.post("/orders",async (req, res)=>{
+//     try{
+//         const instance = new razor({
+//             key_id: "rzp_test_nUCXqMO9VGviQX",
+//             key_secret: "vZzKDbDILXtXGgfW0mcdDd2U",
+//         });
+//         console.log(typeof req.body.amount);
+//         const option={
+//             amount : req.body.amount*10,
+//             currency:"INR",
+//             receipt: crypto.randomBytes(10).toString("hex"),
+//         };
+//         console.log("bye");
+//         instance.orders.create(option,(error,order)=>{
+//             if(error){
+//                 console.log(error);
+//                 return res.status(500).json({message:"Something went wrong"});
+//             }
+//             res.status(200).json({data:order});
+//         });
+//         console.log("ama");
+//     }catch(error){
+//         console.log(error);
+//         console.log("inga tha da iruken");
+//         res.status(500).json({message:"Internal Server Error"});
+//     }
+// });
 
 app.post("/verify",async(req,res)=>{
     try{
