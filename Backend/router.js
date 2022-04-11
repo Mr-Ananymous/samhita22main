@@ -118,15 +118,22 @@ var PORT = process.env.PORT || 4000;
 // 	res.render('request',{postData : JSON.stringify(postData),url : url});
 // });
 
-router.post("/orders", async (req, res) => {
+app.post("/orders", async (req, res) => {
 	try {
-		const instance = new Razorpay({
+		const instance = new razor({
 			key_id: "rzp_test_h3jaqLG39VxWwP",
 			key_secret: "dl453MHchKT72iZeGyMMPZGZ",
 		});
-
+        if (req.body.amount== 'dl*')
+            amount = 250
+        if (req.body.amount == 'qp-')
+            amount= 750
+        if (req.body.amount == 'wb%')
+            amount= 850
+        if (req.body.amount == 'yo@')
+            amount= 800
 		const options = {
-			amount: req.body.amount * 100,
+			amount: amount * 100,
 			currency: "INR",
 			receipt: crypto.randomBytes(10).toString("hex"),
 		};
@@ -144,7 +151,7 @@ router.post("/orders", async (req, res) => {
 	}
 });
 
-router.post("/verify", async (req, res) => {
+app.post("/verify", async (req, res) => {
 	try {
 		const { razorpay_order_id, razorpay_payment_id, razorpay_signature } =
 			req.body;

@@ -185,6 +185,32 @@ class Ticket extends Component {
 	// 	rzp1.open();
     // };
 
+    initPayment = (data) => {
+		const options = {
+			key: "rzp_test_h3jaqLG39VxWwP",
+			amount: data.amount,
+			currency: data.currency,
+			name: "SAMHITA",
+			description: "#DREAMIT_DOIT",
+			order_id: data.id,
+			handler: async (response) => {
+				try {
+					const verifyUrl = "http://localhost:4000/verify";
+					const { data } = await axios.post(verifyUrl, response);
+					console.log(data);
+				} catch (error) {
+					console.log(error);
+				}
+			},
+			theme: {
+				color: "#3399cc",
+			},
+		};
+		const rzp1 = new window.Razorpay(options);
+		console.log(rzp1);
+		rzp1.open();
+	};
+
     handlePurchase = async ()=>{
         let { amount, userId, originalId, radio } = this.state
 		const userID = userId.toString()
@@ -206,59 +232,17 @@ class Ticket extends Component {
 				// document.querySelector('.purchase-button').classList.add('is-loading')
 				// document.querySelector('.purchase-button').disabled = true
 				const orderUrl ="http://localhost:4000/orders";
-                const {data} = await axios.post(orderUrl,{amount: 5});
-                const option={
-                    key:"rzp_test_h3jaqLG39VxWwP",
-                    amount: data.amount,
-                    curreny: "INR",
-                    name: "ML Algorithm",
-                    description: "Nothing",
-                    order_id: data.id,
-                    handler:async(response)=>{
-                        try {
-                            const verifyUrl = "http://localhost:4000/verify";
-                            const { data } = await axios.post(verifyUrl, response);
-                            console.log(data);
-                        } catch (error) {
-                            console.log(error);
-                        }
-                    },
-                    theme: {
-                        color: "#3399cc",
-                    },
-                };
-                const rzp1 = new window.Razorpay(option);
-                rzp1.open();
+                const {data} = await axios.post(orderUrl,{amount: amount});
                 console.log(data);
+                this.initPayment(data.data)
 			}
 		} else {
 			// document.querySelector('.purchase-button').classList.add('is-loading')
 			// document.querySelector('.purchase-button').disabled = true
 			const orderUrl ="http://localhost:4000/orders";
-            const {data} = await axios.post(orderUrl,{amount: 5});
-            const option={
-                key:"rzp_test_h3jaqLG39VxWwP",
-                amount: data.amount,
-                curreny: "INR",
-                name: "ML Algorithm",
-                description: "Nothing",
-                order_id: data.id,
-                handler:async(response)=>{
-                    try {
-                        const verifyUrl = "http://localhost:4000/verify";
-                        const { data } = await axios.post(verifyUrl, response);
-                        console.log(data);
-                    } catch (error) {
-                        console.log(error);
-                    }
-                },
-                theme: {
-                    color: "#3399cc",
-                },
-            };
-            const rzp1 = new window.Razorpay(option);
-            rzp1.open();
+            const {data} = await axios.post(orderUrl,{amount: amount});
             console.log(data);
+            this.initPayment(data.data)
 		}
     };
 
