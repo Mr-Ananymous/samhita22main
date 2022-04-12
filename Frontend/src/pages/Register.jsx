@@ -102,7 +102,7 @@ class Register extends Component {
                 if(mobile.match(/^\d{10}$/)) {
                     if(password === confirmPassword) {
                         this.setState({ isLoading: true }, () => {
-                            axios.post(/*'https://samhita-backend.herokuapp.com/register'*/'http://localhost:4000/register', {
+                            axios.post('https://samhita-backend.herokuapp.com/register'/*'http://localhost:4000/register'*/, {
                                 name: name,
                                 mailid: email.toLowerCase(),
                                 contactnum: mobile,

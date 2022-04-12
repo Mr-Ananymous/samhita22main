@@ -64,7 +64,7 @@ class Ticket extends Component {
 		})
         const userId = localStorage.getItem('id')
         this.setState({ isLoading: true, userId: userId }, () => {
-            axios.post(/*'https://samhita-backend.herokuapp.com/details'*/'http://localhost:4000/details', {
+            axios.post('https://samhitabackend.herokuapp.com/details'/*'http://localhost:4000/details'*/, {
                 userid: userId
             }).then(res => {
                 this.setState({ userData: res.data })
@@ -195,7 +195,7 @@ class Ticket extends Component {
 			order_id: data.id,
 			handler: async (response) => {
 				try {
-					const verifyUrl = "http://localhost:4000/verify";
+					const verifyUrl = 'https://samhitabackend.herokuapp.com/verify'/*"http://localhost:4000/verify"*/;
 					const { data } = await axios.post(verifyUrl, response);
 					console.log(data);
 				} catch (error) {
@@ -231,7 +231,7 @@ class Ticket extends Component {
                 console.log("amount:"+ amount);
 				// document.querySelector('.purchase-button').classList.add('is-loading')
 				// document.querySelector('.purchase-button').disabled = true
-				const orderUrl ="http://localhost:4000/orders";
+				const orderUrl ='https://samhitabackend.herokuapp.com/orders'/*"http://localhost:4000/orders"*/;
                 const {data} = await axios.post(orderUrl,{amount: amount});
                 console.log(data);
                 this.initPayment(data.data)
@@ -239,7 +239,7 @@ class Ticket extends Component {
 		} else {
 			// document.querySelector('.purchase-button').classList.add('is-loading')
 			// document.querySelector('.purchase-button').disabled = true
-			const orderUrl ="http://localhost:4000/orders";
+			const orderUrl = 'https://samhitabackend.herokuapp.com/orders'/*"http://localhost:4000/orders"*/;
             const {data} = await axios.post(orderUrl,{amount: amount});
             console.log(data);
             this.initPayment(data.data)

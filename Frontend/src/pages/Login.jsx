@@ -62,7 +62,7 @@ class Login extends Component {
         if(email && password) {
             if(email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
                 this.setState({isLoading: true}, () => {
-                    axios.post(/*'https://samhita-backend.herokuapp.com/login'*/'http://localhost:4000/login', {
+                    axios.post('https://samhitabackend.herokuapp.com/login'/*'http://localhost:4000/login'*/, {
                         mailid: email.toLowerCase(),
                         pass: password
                     })
@@ -181,7 +181,7 @@ class Login extends Component {
         document.querySelector('.forgot').classList.add('is-loading')
         if(this.mobile) {
             if(this.mobile.match(/^\d{10}$/)) {             
-                axios.post(/*'https://samhita-backend.herokuapp.com/forgotpassword'*/'http://localhost:4000/forgotpassword', {
+                axios.post('https://samhitabackend.herokuapp.com/forgotpassword'/*'http://localhost:4000/forgotpassword'*/, {
                     phonenumber: this.mobile
                 })
                 .then(res => {

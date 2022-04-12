@@ -51,7 +51,7 @@ class Profile extends Component {
             duration: 100
         })
         this.setState({ isLoading: true }, () => {
-            axios.post(/*'https://samhita-backend.herokuapp.com/details'*/'http://localhost:4000/details', {
+            axios.post('https://samhitabackend.herokuapp.com/details'/*'http://localhost:4000/details'*/, {
                 userid: this.state.userId
             }).then(res => {
                 this.setState({ 

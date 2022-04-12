@@ -185,7 +185,7 @@ class Workshops extends Component {
         this.setState({ isLoading: true }, () => {
             const userId = localStorage.getItem('id')
             if(userId) {
-                axios.post(/*'https://samhita-backend.herokuapp.com/details'*/'http://localhost:4000/details', {
+                axios.post('https://samhitabackend.herokuapp.com/details'/*'http://localhost:4000/details'*/, {
                     userid: userId
                 }).then(res => {
                     this.setState({ isLoading: false })
