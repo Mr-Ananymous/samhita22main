@@ -29,17 +29,15 @@ import bg1 from '../assets/darkblueTexture.jpg'
 import Tekion from '../assets/Sponsors/Tekion.png'
 import CredLogo from '../assets/Sponsors/Cred.png'
 import Guvi from '../assets/Sponsors/Guvi.png'
-import StartupPartnerImage1 from '../assets/Sponsors/neohorizon.png'
-import crayon from '../assets/Sponsors/crayon.png'
+import StartupPartnerImage1 from '../assets/Sponsors/Startuppartner1.png'
+import GFG from '../assets/Sponsors/Workshoppartner.png'
 import Poorvika from '../assets/Sponsors/Eventpartner.png'
 import Dealshare from '../assets/Sponsors/Dealshare.png'
 import OnlinemediaPartnerImage2 from '../assets/Sponsors/Blacksheep1.png'
-import Vaayusheshtra from '../assets/Sponsors/tensor.png'
-import jeevas from '../assets/Sponsors/jeevas.png'
+import Vaayusheshtra from '../assets/Sponsors/Vaayusheshtra.png'
 import carousel1 from '../assets/carousel1.png'
 import carousel2 from '../assets/carousel2.png'
 import carousel3 from '../assets/carousel3.png'
-import codebasics from '../assets/Sponsors/codebasics.png'
 
 class Home extends Component {
 
@@ -192,7 +190,7 @@ class Home extends Component {
                             </div>
                             <div className = 'column is-narrow has-text-centered insight-box is-centered'>
                                 <div className = 'badge-3'  style = {{padding:'0px'}}>6+</div>
-                                    <div  className = 'title is-1 is-quicksand home-title is-centered' style={{cursor:'pointer',color:'white',padding:'3px',fontSize:'30px'}}>Interns</div>
+                                    <div onClick = {() => this.props.history.push('/interns')} className = 'title is-1 is-quicksand home-title is-centered' style={{cursor:'pointer',color:'white',padding:'3px',fontSize:'30px'}}>Interns</div>
                             </div>
                     </div>
                     </div>
@@ -261,7 +259,7 @@ class Home extends Component {
                         <div className = 'container'>
                             <div className = 'columns'>
                                 <div className = 'column'>
-                                    <img data-aos = 'fade-right' id = 'ticket-section' width = {800} src = {SamhitaTicket} alt= "Samhita '22 ticket" />
+                                    <img data-aos = 'fade-right' id = 'ticket-section' width = {800} src = {SamhitaTicket} alt= "Samhita '20 ticket" />
                                     <div data-aos = 'fade-right' className = 'field'>
                                         <div className = 'control'>
                                             <div className = 'subtitle is-4 is-lato benefits-title' style={{color:'white'}}>
@@ -390,18 +388,18 @@ class Home extends Component {
                         <div data-aos = 'fade-up' className = 'container sponsors-container'>
 						<div className = 'columns'>
                             <div className = 'column has-text-centered'>
-								<a href = 'https://tekion.com/' target = '_blank' rel="noopener noreferrer">
-                                    <img className = 'sponsor image-button act-logo' src = {Tekion} alt = 'Tekion'/>
+								<a href = 'https://www.actcorp.in/' target = '_blank' rel="noopener noreferrer">
+                                    <img className = 'sponsor image-button act-logo' src = {Tekion} alt = 'Co-sponsor - ACT Fibernet'/>
                                 </a>
                             </div>
 							<div className = 'column has-text-centered'>
-								<a href = 'https://kissflow.com/' target = '_blank' rel="noopener noreferrer">
-                                    <img className = 'image-button sponsor' src = {kissflow} alt = 'Kissflow'/>
+								<a href = 'https://www.poorvikamobile.com/' target = '_blank' rel="noopener noreferrer">
+                                    <img className = 'image-button sponsor' src = {kissflow} alt = 'Poorvika mobiles - Event partner'/>
                                 </a>
                             </div>
                             <div className = 'column has-text-centered'>
-                                <a href = 'https://www.guvi.in/' target = '_blank' rel="noopener noreferrer">
-                                    <img className = 'sponsor image-button' src = {Guvi} alt = 'GUVI'/>
+                                <a href = '//' target = '_blank' rel="noopener noreferrer">
+                                    <img className = 'sponsor image-button' src = {Guvi} alt = 'GeeksforGeeks'/>
                                 </a>
                             </div>
                         </div>
@@ -412,20 +410,20 @@ class Home extends Component {
                                 </a>
                             </div>
                             <div className = 'column'>
-                                <a href = 'https://www.credavenue.com/' target = '_blank' rel="noopener noreferrer">
-                                    <img className = 'image-button sponsor' style = {{position: 'relative', top: '-2.7px'}} src = {CredLogo} alt = 'Cognizance 2022 (IIT Roorkee) - Tech fest partner'/>
+                                <a href = 'https://www.cognizance.org.in/' target = '_blank' rel="noopener noreferrer">
+                                    <img className = 'image-button sponsor' style = {{position: 'relative', top: '-2.7px'}} src = {CredLogo} alt = 'Cognizance 2020 (IIT Roorkee) - Tech fest partner'/>
                                 </a>
                             </div>
                             <div className = 'column'>
-								<a href = 'https://www.poorvika.com/' target = '_blank' rel="noopener noreferrer">
+								<a href = 'https://kalvimalar.dinamalar.com/index.asp' target = '_blank' rel="noopener noreferrer">
                                     <img className = 'sponsor image-button kalvimalar' src = {Poorvika} alt = 'Kalvimalar - Educational Media Partner'/>
                                 </a>
                             </div>
                         </div>
                         <div className = 'columns'>
                             <div className = 'column'>
-                                <a href = 'https://www.crayondata.com/' target = '_blank' rel="noopener noreferrer">
-                                    <img className = 'image-button sponsor' style = {{position: 'relative', top: '-3px'}}  src = {crayon} alt = 'Codechef - Coding partner'/>
+                                <a href = 'https://www.codechef.com/' target = '_blank' rel="noopener noreferrer">
+                                    <img className = 'image-button sponsor' style = {{position: 'relative', top: '-3px'}}  src = {WorkshopPartnerImage} alt = 'Codechef - Coding partner'/>
                                 </a>
                             </div>
                             {/* <div className = 'column'>
@@ -434,12 +432,12 @@ class Home extends Component {
                                 </a>
                             </div> */}
                             <div className = 'column'>
-                                <a href = 'https://www.dealshare.in/' target = '_blank' rel="noopener noreferrer">
+                                <a href = 'https://www.youtube.com/c/BlackSheepTamil' target = '_blank' rel="noopener noreferrer">
                                     <img className = 'image-button sponsor' src = {Dealshare} alt = 'Micset - Online media partner'/>
                                 </a>
                             </div>
                             <div className = 'column'>
-                                <a href = 'https://www.tensorflow.org/community/groups' target = '_blank' rel="noopener noreferrer">
+                                <a href = 'https://www.youtube.com/c/MicSet_official' target = '_blank' rel="noopener noreferrer">
                                     <img className = 'image-button sponsor' src = {Vaayusheshtra} alt = 'Micset - Online media partner'/>
                                 </a>
                             </div>
@@ -451,13 +449,13 @@ class Home extends Component {
                                 </a>
                             </div>
                             <div className = 'column'>
-                                <a href = 'https://jivass.com/' target = '_blank' rel="noopener noreferrer">
-                                    <img className = 'image-button sponsor' style = {{position: 'relative', top: '7.7px'}} src = {jeevas} alt = 'Dinamalar - Print partner'/>
+                                <a href = 'https://www.dinamalar.com' target = '_blank' rel="noopener noreferrer">
+                                    <img className = 'image-button sponsor' style = {{position: 'relative', top: '7.7px'}} src = {OnlinemediaPartnerImage2} alt = 'Dinamalar - Print partner'/>
                                 </a>
                             </div>
                             <div className = 'column has-text-centered'>
-                                <a href = 'https://youtube.com/c/codebasics' target = '_blank' rel="noopener noreferrer">
-                                    <img className = 'image-button sponsor' src = {codebasics} alt = 'Bingo - Entertainment partner'/>
+                                <a href = 'http://bingosnacks.com/' target = '_blank' rel="noopener noreferrer">
+                                    <img className = 'image-button sponsor' src = {OnlinemediaPartnerImage} alt = 'Bingo - Entertainment partner'/>
                                 </a>
                             </div>
                         </div>
@@ -477,16 +475,16 @@ class Home extends Component {
                 </section>
             <div className = 'samhita-footer has-text-centered'>
                     <div className = 'subtitle is-6 is-lato'>
-                        © 2022 Samhita TechTeam • All rights reserved • There is no cancellation policy
+                        © 2022 Samhita WebTeam • All rights reserved • There is no cancellation policy
                     </div>
                     <div className = 'subtitle is-6 is-lato' style = {{marginTop: '-15px'}}>
                         <span className = 'has-text-link' style = {{cursor: 'pointer'}} onClick = {() => this.setModalVisible(true)}>Terms & Conditions</span> | <span className = 'has-text-link' style = {{cursor: 'pointer'}} onClick = {() => this.setPrivacyModalVisible(true)}>Privacy policy</span>
                     </div>
                 </div>
                 <Modal className = 'is-lato' width = '90%' title = 'Terms & Conditions' centered visible = {isModalVisible} onOk = {() => this.setModalVisible(false)} closable = {false} okButtonProps = {{shape: 'round', type: 'danger'}} okText = 'Accept and close' cancelButtonProps = {{hidden: true}}>
-                    <p className = 'title is-4'>Welcome to Samhita 22!</p>
+                    <p className = 'title is-4'>Welcome to Samhita 20!</p>
 
-                    <p>These terms and conditions outline the rules and regulations for the use of Samhita 22's Website, located at <mark>https://samhita.org.in</mark>.</p>
+                    <p>These terms and conditions outline the rules and regulations for the use of Samhita 20's Website, located at <mark>https://samhita.org.in</mark>.</p>
 
                     <p>By accessing this website we assume you accept these terms and conditions. Do not continue to use Samhita 22 if you do not agree to take all of the terms and conditions stated on this page. </p>
 
@@ -494,20 +492,20 @@ class Home extends Component {
 
                     <h3 style = {{margin: '1rem 0rem'}}><strong>Cookies</strong></h3>
 
-                    <p>We employ the use of cookies. By accessing Samhita 22, you agreed to use cookies in agreement with the Samhita 22's Privacy Policy.</p>
+                    <p>We employ the use of cookies. By accessing Samhita 20, you agreed to use cookies in agreement with the Samhita 20's Privacy Policy.</p>
 
                     <p>Most interactive websites use cookies to let us retrieve the user’s details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies.</p>
 
                     <h3 style = {{margin: '1rem 0rem'}}><strong>License</strong></h3>
 
-                    <p>Unless otherwise stated, Samhita 22 and/or its licensors own the intellectual property rights for all material on Samhita 22. All intellectual property rights are reserved. You may access this from Samhita 22 for your own personal use subjected to restrictions set in these terms and conditions.</p>
+                    <p>Unless otherwise stated, Samhita 20 and/or its licensors own the intellectual property rights for all material on Samhita 20. All intellectual property rights are reserved. You may access this from Samhita 20 for your own personal use subjected to restrictions set in these terms and conditions.</p>
 
                     <p>You must not:</p>
                     <ul style = {{listStyleType: 'square', marginLeft: '15px'}}>
-                        <li>Republish material from Samhita 22</li>
-                        <li>Sell, rent or sub-license material from Samhita 22</li>
-                        <li>Reproduce, duplicate or copy material from Samhita 22</li>
-                        <li>Redistribute content from Samhita 22</li>
+                        <li>Republish material from Samhita 20</li>
+                        <li>Sell, rent or sub-license material from Samhita 20</li>
+                        <li>Reproduce, duplicate or copy material from Samhita 20</li>
+                        <li>Redistribute content from Samhita 20</li>
                     </ul>
 
                     <p>This Agreement shall begin on the date hereof.</p>
@@ -538,11 +536,11 @@ class Home extends Component {
                         <li>educational institutions and trade associations.</li>
                     </ul>
 
-                    <p>We will approve link requests from these organizations if we decide that: (a) the link would not make us look unfavorably to ourselves or to our accredited businesses; (b) the organization does not have any negative records with us; (c) the benefit to us from the visibility of the hyperlink compensates the absence of Samhita 22; and (d) the link is in the context of general resource information.</p>
+                    <p>We will approve link requests from these organizations if we decide that: (a) the link would not make us look unfavorably to ourselves or to our accredited businesses; (b) the organization does not have any negative records with us; (c) the benefit to us from the visibility of the hyperlink compensates the absence of Samhita 20; and (d) the link is in the context of general resource information.</p>
 
                     <p>These organizations may link to our home page so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products or services; and (c) fits within the context of the linking party’s site.</p>
 
-                    <p>If you are one of the organizations listed in paragraph 2 above and are interested in linking to our website, you must inform us by sending an e-mail to Samhita 22. Please include your name, your organization name, contact information as well as the URL of your site, a list of any URLs from which you intend to link to our Website, and a list of the URLs on our site to which you would like to link. Wait 2-3 weeks for a response.</p>
+                    <p>If you are one of the organizations listed in paragraph 2 above and are interested in linking to our website, you must inform us by sending an e-mail to Samhita 20. Please include your name, your organization name, contact information as well as the URL of your site, a list of any URLs from which you intend to link to our Website, and a list of the URLs on our site to which you would like to link. Wait 2-3 weeks for a response.</p>
 
                     <p>Approved organizations may hyperlink to our Website as follows:</p>
 
@@ -583,29 +581,29 @@ class Home extends Component {
                     <p>As long as the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature.</p>
                 </Modal>
                 <Modal className = 'is-lato' width = '90%' title = 'Privacy policy' centered visible = {isPrivacyModalVisible} onOk = {() => this.setPrivacyModalVisible(false)} closable = {false} okButtonProps = {{shape: 'round', type: 'danger'}} okText = 'Okay' cancelButtonProps = {{hidden: true}}>
-                    <p>At Samhita 22, accessible from <mark>https://samhita.org.in</mark>, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Samhita 22 and how we use it.</p>
+                    <p>At Samhita 20, accessible from <mark>https://samhita.org.in</mark>, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Samhita 20 and how we use it.</p>
 
                     <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
 
                     <h2 style = {{margin: '1rem 0rem'}}><strong>Log Files</strong></h2>
 
-                    <p>Samhita 22 follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.</p>
+                    <p>Samhita 20 follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.</p>
 
                     <h2 style = {{margin: '1rem 0rem'}}><strong>Cookies and Web Beacons</strong></h2>
 
-                    <p>Like any other website, Samhita 22 uses 'cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.</p>
+                    <p>Like any other website, Samhita 20 uses 'cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.</p>
 
                     <h2 style = {{margin: '1rem 0rem'}}><strong>Privacy Policies</strong></h2>
 
-                    <p>You may consult this section to find the Privacy Policy for each of the advertising partners of Samhita 22.</p>
+                    <p>You may consult this section to find the Privacy Policy for each of the advertising partners of Samhita 20.</p>
 
-                    <p>Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on Samhita 22, which are sent directly to users' browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.</p>
+                    <p>Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on Samhita 20, which are sent directly to users' browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.</p>
 
-                    <p>Note that Samhita 22 has no access to or control over these cookies that are used by third-party advertisers.</p>
+                    <p>Note that Samhita 20 has no access to or control over these cookies that are used by third-party advertisers.</p>
 
                     <h2 style = {{margin: '1rem 0rem'}}><strong>Third Party Privacy Policies</strong></h2>
 
-                    <p>Samhita 22's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options. You may find a complete list of these Privacy Policies and their links here: Privacy Policy Links.</p>
+                    <p>Samhita 20's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options. You may find a complete list of these Privacy Policies and their links here: Privacy Policy Links.</p>
 
                     <p>You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites. <a href = 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies' target = '_blank' rel = 'noreferrer noopener'>What Are Cookies?</a></p>
 
@@ -613,11 +611,11 @@ class Home extends Component {
 
                     <p>Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.</p>
 
-                    <p>Samhita 22 does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
+                    <p>Samhita 20 does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
 
                     <h2 style = {{margin: '1rem 0rem'}}><strong>Online Privacy Policy Only</strong></h2>
 
-                    <p>This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in Samhita 22. This policy is not applicable to any information collected offline or via channels other than this website.</p>
+                    <p>This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in Samhita 20. This policy is not applicable to any information collected offline or via channels other than this website.</p>
 
                     <h2 style = {{margin: '1rem 0rem'}}><strong>Consent</strong></h2>
 

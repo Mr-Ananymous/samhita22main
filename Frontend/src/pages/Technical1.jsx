@@ -58,7 +58,7 @@ class Technical extends Component {
         return (
             <React.Fragment>
                 <Helmet>
-                    <title>Samhita 22 - Technical events</title>
+                    <title>Samhita 20 - Technical events</title>
                 </Helmet>
                 <Navbar name = 'event'/>
                 <section className = 'section' style = {{backgroundColor: '#090a2b', minHeight: '100vh', display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
@@ -87,7 +87,7 @@ class Technical extends Component {
                                         <ul>
                                             <li>• Problem statements are given at the end of rules.</li>
                                             <li>• Purchase of Samhita ticket for entry is mandatory.</li>
-                                            <li>• Time for solving the problems are between 17<sup>th</sup> and 22<sup>th</sup> of April 2022.</li>
+                                            <li>• Time for solving the problems are between 17<sup>th</sup> and 22<sup>th</sup> of April 2020.</li>
                                             <li>• The shortlisted teams must prepare a PPT and present it on April 23<sup>rd</sup> at Samhita '22.</li>
                                         </ul>
                                         <button className = 'button is-lato is-link is-rounded' style = {{margin: '12px 0px'}} onClick = {() => this.setDrawerVisible(true)}>Problem statements</button>
@@ -264,10 +264,10 @@ class Technical extends Component {
                                     <div>
                                         <ul>
                                             <li>• Paper must be in IEEE format.</li>
-                                            <li>• Papers must be submitted to <a href = 'mailto: samhita2k22@gmail.com'>samhita2k22@gmail.com</a> before 22/04/2022</li>
+                                            <li>• Papers must be submitted to <a href = 'mailto: papers@samhita.org.in'>papers@samhita.org.in</a> before 22/04/2022</li>
                                             <li>• Mail should contain the unique Samhita ID received on purchase of Samhita '22 ticket.</li>
                                             <li>• Plagiarism of any kind is strictly prohibited.</li>
-                                            <li style = {{marginTop: '10px'}}><strong>Note: One Samhita ticket is enough for participation of a team consisting three members. But Only 1 certificate will be issued and that will be for the person who has purchased Samhita ticket (Certificate will contain the names of all three members). Seperate tickets should be bought for individual certificates.</strong></li>
+                                            <li style = {{marginTop: '10px'}}><strong>Note: One Samhita ticket is enough for participation of a team consisting three members. But only one certificate will be issued for the person who has purchased Samhita ticket (Certificate will contain the names of all three members). Seperate tickets should be bought for individual certificates.</strong></li>
                                         </ul>
                                     </div>
                                 </Event>
@@ -409,7 +409,7 @@ class Technical extends Component {
                                 >
                                     <div>
                                         <ul>
-                                            <li>• There will be many connected paths of questions leading to a same destination.</li>
+                                            <li>• Questions will be based on Bas</li>
                                             <li>• A candidate can choose any path to reach the final destination.</li>
                                             <li>• Each node in the connected graph of questions, has a separate weightage.</li>
                                             <li>• A candidate's total points is the highest aggregate of points along any path.</li>

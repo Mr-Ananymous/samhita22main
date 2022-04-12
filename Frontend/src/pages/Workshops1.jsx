@@ -26,11 +26,6 @@ import dealshare from '../assets/ds.png'
 import uiux from '../assets/uiux.png'
 import tensor from '../assets/tensorflow.png'
 import guvi from '../assets/GUVI.png'
-import crayon from '../assets/CrayonLogo.jpg'
-import cloud from '../assets/cloudcomputing.png'
-import credLogo from '../assets/CredAvenue.png'
-import codebasics from '../assets/codebasics.jpg'
-import datascience from '../assets/datascience.jpg'
 
 class Workshops extends Component {
 
@@ -261,7 +256,7 @@ class Workshops extends Component {
                                 <div className = 'field upper'>
                                     <div className = 'control'>
                                         <div className = 'title is-2 is-lato workshop-title'>
-                                        UI/UX Bootcamp using React Native
+                                            Introduction to ReactNative and Expo Tool Hands On
                                         </div>
                                     </div>
                                     <div className = 'control is-pulled-right' style = {{margin: '20px 0px 0px 0px'}}>
@@ -289,7 +284,7 @@ class Workshops extends Component {
                                             onClose={this.onAndroidClose}
                                             visible={this.state.androidDrawerVisible}
                                             >
-                                            <strong>Agenda of UI/UX Bootcamp using React Native</strong>
+                                            <strong>Agenda of Android App Development Workshop</strong>
                                             <ol>
                                                 <li>Why React Native?</li>
                                                 <li>Prerequisites and setting up Environment</li>
@@ -415,7 +410,7 @@ class Workshops extends Component {
                                         <div className = 'subtitle has-text-link is-6 is-lato workshop-summary' style = {{cursor: 'pointer'}} onClick = {this.showMlDrawer}>
                                             Agenda & FAQ
                                         </div>
-                                        <Drawer className = 'is-lato'
+                                        <Drawer                                                  className = 'is-lato'
                                             title="Agenda & FAQ"
                                             width = '90%'
                                             placement = 'left'
@@ -427,7 +422,7 @@ class Workshops extends Component {
                                             <p style = {{fontWeight: 'bold', margin: '1rem 0rem'}}>Session 1: Introduction to Machine Learning (9am to 11am)</p>
                                             <ul>
                                                 <li>● How Artificial Intelligence is transforming the world we live?</li>
-                        
+                                                <li>● Your Role in this rapid AI revolutions</li>
                                                 <li>● Evolution of AI</li>
                                                 <li>● Rule Based vs Machine Learning</li>
                                                 <li>● Quick Draw Demo</li>
@@ -436,30 +431,58 @@ class Workshops extends Component {
                                                 <li>● Over fitting and Bias</li>
                                                 <li>● Teachable Machines Demo</li>
                                             </ul>
-                                            <p style = {{fontWeight: 'bold', margin: '1rem 0rem'}}>Session 2: Neural Networks (11am to 1pm)</p>
-                                            
-                                            <li>● From Machine Learning to Deep Learning</li>
+                                            <p style = {{fontWeight: 'bold', margin: '1rem 0rem'}}>Session 2: Machine Learning Algorithms (11am to 1pm)</p>
+                                            <p><b>Supervised learning:</b></p>
+                                            <ul style = {{marginBottom: '0.5rem'}}>
+                                                <li>● Linear Regression</li>
+                                                <li>● Logistic Regression</li>
+                                                <li>● Decision Tree</li>
+                                            </ul>
+                                            <p><b>Unsupervised learning:</b></p>
+                                            <ul style = {{marginBottom: '0.5rem'}}>
+                                                <li>● K means clustering</li>
+                                                <li>● PCA</li>
+                                            </ul>
+                                            <p>Demos:</p>
+                                            <ul>
+                                                <li>● Posenet</li>
+                                                <li>● Bodypix</li>
+                                            </ul>
+                                            <p style = {{marginTop: '1rem'}}><strong className = 'is-size-5'>Afternoon sessions</strong></p>
+                                            <p style = {{fontWeight: 'bold', margin: '1rem 0rem'}}>Session 3: A dive into Neural Networks (2pm to 3pm)</p>
+                                            <ul>
+                                                <li>● From Machine Learning to Deep Learning</li>
                                                 <li>● The Brain Analogy with Neural Networks</li>
                                                 <li>● Building Neural Network from Logistic Regression</li>
                                                 <li>● Activation Functions</li>
-                                                <li>● Online Playground</li>  
-                                            
-                                            <p style = {{marginTop: '1rem'}}><strong className = 'is-size-5'>Afternoon sessions</strong></p>
-                                            <p style = {{fontWeight: 'bold', margin: '1rem 0rem'}}>Session 3: Advanced Topics with Demos (2pm to 3pm)</p>
-                                            <ul>
-                                                <li>●First Steps with TensorFlow </li>
-                                                <li>● Introduction to Convolutional Neural Network</li>
-                                                <li>●Training Image Classifier </li>
-                                                <li>● Introduction to Natural Language Processing</li>
-                                                       
+                                                <li>● Online Playground</li>                 
                                             </ul>
-                                            <p style = {{fontWeight: 'bold', margin: '1rem 0rem'}}>Session 4: Group Discussion and further Learning (3pm to 4pm)</p>
-                                            <li>●First Steps with TensorFlow </li>
+                                            <p style = {{fontWeight: 'bold', margin: '1rem 0rem'}}>Session 4: AI around us (3pm to 4pm)</p>
+                                            <p><b>Computer vision</b></p>
+                                            <ul style = {{marginBottom: '0.5rem'}}>
+                                                <li>● Applications: Object Detection, Face Recognition</li>            
+                                            </ul>
+                                            <p><b>Natural Language Processing</b></p>
+                                            <ul style = {{marginBottom: '0.5rem'}}>
+                                                <li>● Application: Sentiment Analysis</li>  
+                                            </ul>
+                                            <p><b>Reinforcement Learning</b></p>
+                                            <ul style = {{marginBottom: '0.5rem'}}>
+                                                <li>● Application: Playing games at Super Human level</li>  
+                                            </ul>
+                                            <p><b>Generative Adversarial Network</b></p>
+                                            <ul>
+                                                <li>● Application: Deepfakes</li>  
+                                            </ul>
+                                            <p style = {{fontWeight: 'bold', margin: '1rem 0rem'}}>Session 5: Conclusion (4pm to 5pm)</p>
+                                            <ul>
                                                 <li>● Solving a local problem using Machine Learning</li>
-                                                <li>● Current Breakthroughs in Artificial Intelligence </li>
+                                                <li>● Current Breakthroughs in Artificial Intelligence</li>
+                                                <li>● AI start-ups</li>
                                                 <li>● Industry roles in Artificial Intelligence</li>
                                                 <li>● Tools and Technology to learn for the industry</li>
-                                                <li>● Providing guide to free resources for further learning and training</li>
+                                                <li>● Further learning resource</li>    
+                                            </ul>
                                             <hr/>
                                             <p style = {{marginBottom: '1rem'}}><strong>FAQ</strong></p>
                                             <ol>
@@ -819,19 +842,19 @@ class Workshops extends Component {
                     <div data-aos = 'fade-right' className = 'container workshop-container'>
                     <div className = 'columns'>
                             <div className = 'column is-half' style = {{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
-                                <LazyLoadImage src = {PlacementImage} alt = 'Placement training and Resume Building Workshop' effect = 'blur'/>
+                                <LazyLoadImage src = {PlacementImage} alt = 'Placement training workshop' effect = 'blur'/>
                             </div>
                             <div className = 'column workshop-content'>
                                 <div className = 'field upper'>
                                     <div className = 'control'>
                                         <div className = 'title is-2 is-lato workshop-title'>
-                                            Placement Training and Resume Building Workshop
+                                            Placement Training
                                         </div>
                                     </div>
-                                    <div className = 'control is-pulled-right' style = {{margin: '2px 0px 0px 0px'}}>
+                                    <div className = 'control is-pulled-right' style = {{margin: '20px 0px 0px 0px'}}>
                                         <span className = 'subtitle is-6 is-lato'>by</span>
                                         <span className = 'organiser-logo' style = {{marginLeft: '15px'}}>
-                                            <LazyLoadImage src = {guvi} alt = 'GeeksforGeeks logo' width = {130} height = {50} effect = 'blur' />
+                                            <LazyLoadImage src = {guvi} alt = 'GeeksforGeeks logo' width = {150} height = {60} effect = 'blur' />
                                         </span>
                                     </div><br/>
                                 </div>
@@ -855,7 +878,7 @@ class Workshops extends Component {
                                             onClose={this.onGeeksClose}
                                             visible={this.state.geeksDrawerVisible}
                                             >
-                                            <strong>Agenda of Placement Training and Resume Building Workshop</strong>
+                                            <strong>Agenda of Placement Training Workshop</strong>
                                             <ol>
                                                 <li>Placement Preparation for Product based companies (Amazon, Microsoft, Adobe, etc)</li>
                                                 <li>Walkthrough to the technical Interview process for the SDE Hiring.</li>
@@ -866,17 +889,17 @@ class Workshops extends Component {
                                                 <li>Query & interactive session.</li>
                                             </ol>
                                             <hr/>
-                                            {/* <p style = {{marginBottom: '1rem'}}><strong>Know the mentor</strong></p>
+                                            <p style = {{marginBottom: '1rem'}}><strong>Know the mentor</strong></p>
                                             <p style = {{marginBottom: '1rem'}}><strong>Mr. Shashi Bhushan</strong></p>
                                             <p>Worked with Adobe for about 2 years, Shashi Bhushan has sound knowledge of technologies like Java, Spring/Spring Boot, Hibernate, REST APIs, Python, Django, etc with a first-class hands-on of DSA. He graduated from NIT Allahabad in 2016 and worked for Paytm as a Software Engineer for a year. He is very passionate about Competitive Programming & Problem Solving. He is currently working as a Mentor at GeeksforGeeks.</p>
-                                            <hr/> */}
+                                            <hr/>
                                             <p style = {{marginBottom: '1rem'}}><strong>FAQ</strong></p>
                                             <ol>
                                                 <li>
                                                     <strong>
                                                         What is the timing of the workshop?
                                                     </strong><br/>
-                                                    Placement Training and Resume Building Workshop will be a half day workshop from 10 AM to 1 PM
+                                                    Placement Training Workshop will be a half day workshop from 10 AM to 1 PM
                                                 </li>
                                                 <li>
                                                     <strong>
@@ -944,7 +967,7 @@ class Workshops extends Component {
                                             <div className ='control'>
                                                 <Tooltip placement = 'right' title = {text}>
                                                     <div className = 'subtitle is-5 is-lato workshop-detail'>
-                                                        FREE*
+                                                        FREE with Samhita'22 Tickets*
                                                     </div>
                                                 </Tooltip>
                                             </div>
@@ -954,50 +977,50 @@ class Workshops extends Component {
                                                 </button> */}
                                         <div className = 'field is-grouped'>
                                             <div className = 'control has-icons-right'>
-                                                {
+                                                {/* {
                                                     isLoading ? 
                                              <p style={{fontSize:'18px',color:'red'}}><sup>*</sup>Registration opens Soon.</p>
                                                    
                                                 
                                                    :
 
-                                                    <button className = 'button is-rounded is-link has-text-weight-semibold is-lato' disabled onClick = {this.handleFreeWorkshop}>
-                                                        BUY
-                                                    </button>
-                                                } 
+                                                    // <button className = 'button is-rounded is-link has-text-weight-semibold is-lato' disabled onClick = {this.handleFreeWorkshop}>
+                                                    //     BUY
+                                                    // </button>
+                                                }  */}
                                             </div>
                                         </div>
                                     </div>
-                                    <div className = 'subtitle is-6 is-lato has-text-weight-semibold has-text-danger' style = {{marginTop: '1rem'}}>*Onsite registrations are available for limited number of seats!. SO be quick to register once its open.</div>
+                                    <div className = 'subtitle is-6 is-lato has-text-weight-semibold has-text-danger' style = {{marginTop: '1rem'}}>*Onsite registrations are available for limited number of seats!. So be quick to buy Samhita'22 tickets once its open.</div>
                                 </section>
                             </div>
                         </div>
                     </div>
-                    <div data-aos = 'fade-left' className = 'container workshop-container'>
+                    {/* <div data-aos = 'fade-left' className = 'container workshop-container'>
                         <div className = 'columns workshop-columns'>
                             <div className = 'column workshop-content-alt'>
                                 <div className = 'field upper-alt'>
                                     <div className = 'control'>
                                         <div className = 'title is-2 is-lato workshop-title-alt'>
-                                            Ethical Hacking & Cybersecurity Workshop
+                                            Ethical Hacking
                                         </div>
                                     </div>
                                     <div className = 'control' style = {{margin: '20px 0px 0px 0px'}}>
                                         <span className = 'subtitle is-6 is-lato'>by</span>
                                         <span className = 'organiser-logo-2' style = {{margin: '0px 5px'}}>
-                                            <LazyLoadImage src = {crayon} alt = 'Crayon Logo' width = {100} height = {60} effect = 'blur' /> 
+                                            <LazyLoadImage src = {ZohoImage} alt = 'Zoho logo' width = {100} height = {60} effect = 'blur' /> 
                                         </span>
                                     </div>
                                 </div>
                                 <div className = 'field' style = {{marginTop: '-20px'}}>
                                     <div className = 'control'>
                                         <div className = 'subtitle is-6 is-lato workshop-summary-alt'>
-                                            In an open world like the Internet, the space for privacy and security is getting smaller every day. Samhita '22 invites you all the budding hackers out there to get the space you deserve through this workshop. Gear up! With great power comes great responsibility. Hackers are also solution makers, aren't they?
+                                            In an open world like the Internet, the space for privacy and security is getting smaller every day. Samhita '20 invites you all the budding hackers out there to get the space you deserve through this workshop. Gear up! With great power comes great responsibility. Hackers are also solution makers, aren't they?
                                         </div>
-                                        {/* <div className = 'subtitle has-text-link is-6 is-lato workshop-summary' style = {{cursor: 'pointer'}} onClick = {this.showHackingDrawer}> */}
-                                           <p style={{fontSize:'18px',color:'red'}}><sup>*</sup>Agenda & FAQ will be  updated Soon.</p>
-                                        {/* </div> */}
-                                        {/* <Drawer                                                  
+                                        <div className = 'subtitle has-text-link is-6 is-lato workshop-summary' style = {{cursor: 'pointer'}} onClick = {this.showHackingDrawer}>
+                                            Agenda & FAQ
+                                        </div>
+                                        <Drawer                                                  
                                             className = 'is-lato'
                                             title="Agenda of the workshop"
                                             width = '90%'
@@ -1043,7 +1066,7 @@ class Workshops extends Component {
                                             </ol>
                                             <p><strong>Pre-requisites:</strong></p>
                                             <p style = {{marginBottom: '5px'}}>Kali linux OS in a Virtual box/VMWare</p>
-                                        </Drawer> */}
+                                        </Drawer>
                                     </div>
                                 </div>
                                 <section className = 'section'>
@@ -1054,7 +1077,7 @@ class Workshops extends Component {
                                             </div>
                                             <div className ='control'>
                                                 <div className = 'subtitle is-5 is-lato workshop-detail'>
-                                                    April 24
+                                                    February 1
                                                 </div>
                                             </div>
                                         </div>
@@ -1081,9 +1104,9 @@ class Workshops extends Component {
                                         <div className = 'field is-grouped'>
                                             <div className = 'control has-icons-right'>
                                                 <button className = 'button is-rounded is-link is-lato has-text-weight-semibold' disabled onClick = {() => this.handleWorkshopPayment('e1')}>
-                                                    Buy  
-                                                </button><p style={{fontSize:'18px',color:'red'}}><sup>*</sup>Registration opens Soon.</p>
-                                                 <span className = 'icon is-right buy-ticket-icon-3 icon-is-hidden'>
+                                                    Sold out!
+                                                </button>
+                                                {/* <span className = 'icon is-right buy-ticket-icon-3 icon-is-hidden'>
                                                     <FontAwesomeIcon icon = {faShoppingCart} size = 'sm' color = 'white' />
                                                 </span> 
                                             </div>
@@ -1095,290 +1118,7 @@ class Workshops extends Component {
                                 <LazyLoadImage src = {HackingImage} alt = 'Ethical hacking workshop' effect = 'blur' />
                             </div>
                         </div>
-                    </div> 
-                    <div data-aos = 'fade-left' className = 'container workshop-container'>
-                        <div className = 'columns workshop-columns'>
-                            <div className = 'column workshop-content-alt'>
-                                <div className = 'field upper-alt'>
-                                    <div className = 'control'>
-                                        <div className = 'title is-2 is-lato workshop-title-alt'>
-                                            Cloud Computing with AWS 
-                                        </div>
-                                    </div>
-                                    <div className = 'control' style = {{margin: '20px 0px 0px 0px'}}>
-                                        <span className = 'subtitle is-6 is-lato'>by</span>
-                                        <span className = 'organiser-logo-2' style = {{margin: '0px 5px'}}>
-                                            <LazyLoadImage src = {credLogo} alt = 'Crayon Logo' width = {100} height = {60} effect = 'blur' /> 
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className = 'field' style = {{marginTop: '-20px'}}>
-                                    <div className = 'control'>
-                                        <div className = 'subtitle is-6 is-lato workshop-summary-alt'>
-                                        Cloud computing is the on-demand delivery of compute power, database, storage, applications, and other IT resources through a cloud services platform via the Internet with pay-as-you-go pricing.
-                                        Amazon Web Services (AWS) is the world’s most comprehensive and broadly adopted cloud platform, offering over 200 fully featured services from data centers globally. 
-                                        Samhita'22 brings you Cloud computing Workshop which provides you hands on in AWS. 
-                                        </div>
-                                        {/* <div className = 'subtitle has-text-link is-6 is-lato workshop-summary' style = {{cursor: 'pointer'}} onClick = {this.showHackingDrawer}> */}
-                                           <p style={{fontSize:'18px',color:'red'}}><sup>*</sup>Agenda & FAQ will be  updated Soon.</p>
-                                        {/* </div> */}
-                                        {/* <Drawer                                                  
-                                            className = 'is-lato'
-                                            title="Agenda of the workshop"
-                                            width = '90%'
-                                            placement = 'left'
-                                            closable={true}
-                                            onClose={this.onHackingClose}
-                                            visible={this.state.hackingDrawerVisible}
-                                            >
-                                            <p><strong>Everything with proper hands-on demo</strong></p><br/>
-                                            <p><strong>10:00 AM</strong></p>
-                                            <p><strong>Information Gathering:</strong></p>
-                                            <ol style = {{marginBottom: '5px'}}>
-                                                <li>Directory Bruteforcing</li>
-                                                <li>Google Dorking</li>
-                                                <li>Sub-Domain Enumeration</li>
-                                                <li>Shodan</li>
-                                                <li>Wayback Machines</li>
-                                            </ol>
-                                            <p><strong>MITM:</strong></p>
-                                            <ol style = {{marginBottom: '5px'}}>
-                                                <li>Wireshark</li>
-                                                <li>ARP Spoofing</li>
-                                            </ol>
-                                            <p><strong>11:15 AM</strong></p>
-                                            <ol style = {{marginBottom: '5px'}}>
-                                                <li>How proxies work?</li>
-                                                <li>Burp Suite Proxy Configuration</li>
-                                            </ol>
-                                            <p><strong>1:00 PM</strong></p>
-                                            <p style = {{marginBottom: '5px'}}>Lunch</p>
-                                            <strong>2:00 PM</strong><br/>
-                                            <strong>Web vulnerabilities:</strong>
-                                            <ol style = {{marginBottom: '5px'}}>
-                                                <li>SQLI</li>
-                                                <li>File Path Traversal Attack</li>
-                                                <li>OTP Brute Force Attack</li>
-                                            </ol>
-                                            <p><strong>Miscellaneous:</strong></p>
-                                            <ol style = {{marginBottom: '5px'}}>
-                                                <li>Bug Hunting</li>
-                                                <li>CTF</li>
-                                                <li>Kickthemout</li>
-                                            </ol>
-                                            <p><strong>Pre-requisites:</strong></p>
-                                            <p style = {{marginBottom: '5px'}}>Kali linux OS in a Virtual box/VMWare</p>
-                                        </Drawer> */}
-                                    </div>
-                                </div>
-                                <section className = 'section'>
-                                    <div className = 'container'>
-                                        <div className ='field is-grouped workshop-detail-row'>
-                                            <div className = 'control workshop-detail-icon-1'>
-                                                <FontAwesomeIcon icon = {faCalendarAlt} size = 'lg' />
-                                            </div>
-                                            <div className ='control'>
-                                                <div className = 'subtitle is-5 is-lato workshop-detail'>
-                                                    April 24
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className ='field is-grouped workshop-detail-row'>
-                                            <div className = 'control workshop-detail-icon-2' style = {{marginLeft: '-5px'}} >
-                                                <FontAwesomeIcon icon = {faClock} size = 'lg' />
-                                            </div>
-                                            <div className ='control'>
-                                                <div className = 'subtitle is-5 is-lato workshop-detail'>
-                                                    9:30 AM - 4 PM
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className ='field is-grouped workshop-detail-row'>
-                                            <div className = 'control workshop-detail-icon-3' style = {{marginLeft: '5px'}} >
-                                                <FontAwesomeIcon icon = {faRupeeSign} size = 'lg' />
-                                            </div>
-                                            <div className ='control'>
-                                                <div className = 'subtitle is-5 is-lato workshop-detail'>
-                                                    799 per head
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className = 'field is-grouped'>
-                                            <div className = 'control has-icons-right'>
-                                                <button className = 'button is-rounded is-link is-lato has-text-weight-semibold' disabled onClick = {() => this.handleWorkshopPayment('e1')}>
-                                                    Buy  
-                                                </button><p style={{fontSize:'18px',color:'red'}}><sup>*</sup>Registration opens Soon.</p>
-                                                 <span className = 'icon is-right buy-ticket-icon-3 icon-is-hidden'>
-                                                    <FontAwesomeIcon icon = {faShoppingCart} size = 'sm' color = 'white' />
-                                                </span> 
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-                            <div className = 'column is-half' style = {{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
-                                <LazyLoadImage src = {cloud} alt = 'Ethical hacking workshop' effect = 'blur' />
-                            </div>
-                        </div>
-                    </div> 
-                    <div data-aos = 'fade-right' className = 'container workshop-container'>
-                    <div className = 'columns'>
-                            <div className = 'column is-half' style = {{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
-                                <LazyLoadImage src = {datascience} alt = 'Placement training and Resume Building Workshop' effect = 'blur'/>
-                            </div>
-                            <div className = 'column workshop-content'>
-                                <div className = 'field upper'>
-                                    <div className = 'control'>
-                                        <div className = 'title is-2 is-lato workshop-title'>
-                                          Data Science Workshop
-                                        </div>
-                                    </div>
-                                    <div className = 'control is-pulled-right' style = {{margin: '20px 0px 0px 0px'}}>
-                                        <span className = 'subtitle is-6 is-lato'>by</span>
-                                        <span className = 'organiser-logo' style = {{marginLeft: '15px'}}>
-                                            <LazyLoadImage src = {codebasics} alt = 'GeeksforGeeks logo' width = {40} height = {40} effect = 'blur' />
-                                        </span>
-                                    </div><br/>
-                                </div>
-                                <div className = 'field'>
-                                    <div className = 'control'>
-                                        <div className = 'subtitle is-6 is-lato workshop-summary'>
-                                        Data science is an essential part of many industries today, given the massive amounts of data that are produced, and is one of the most debated topics in IT circles. 
-                                        Its popularity has grown over the years, and companies have started implementing data science techniques to grow their business and increase customer satisfaction.
-                                        Samhita'22 brings you Online Data Science Workshop absolutely at no cost. 
-                                        </div>
-                                        <div className = 'subtitle is-6 is-lato workshop-summary' >
-                                        Workshop will be taken by Mr.Dhaval Patel, popular mentor in youtube for datascience
-                                        Youtube Channel link: <a href='https://youtube.com/c/codebasics'>Codebasics</a> </div>
-                                        {/* <div className = 'subtitle is-6 is-lato workshop-summary'>
-                                            <strong>Every participant will receive a voucher worth ₹ 300 on GeeksforGeeks courses!</strong>
-                                        </div> */}
-                                        {/* <div className = 'subtitle has-text-link is-6 is-lato workshop-summary' style = {{cursor: 'pointer'}} onClick = {this.showGeeksDrawer}> */}
-                                        <p style={{fontSize:'18px',color:'red'}}><sup>*</sup>Agenda & FAQ will be  updated Soon.</p>
-                                        {/* </div> */}
-                                        {/* <Drawer
-                                            className = 'is-lato'
-                                            title="Agenda & FAQ"
-                                            width = '90%'
-                                            placement = 'left'
-                                            closable={true}
-                                            onClose={this.onGeeksClose}
-                                            visible={this.state.geeksDrawerVisible}
-                                            >
-                                            <strong>Agenda of Placement Training and Resume Building Workshop</strong>
-                                            <ol>
-                                                <li>Placement Preparation for Product based companies (Amazon, Microsoft, Adobe, etc)</li>
-                                                <li>Walkthrough to the technical Interview process for the SDE Hiring.</li>
-                                                <li>How to ace your technical interview.</li>
-                                                <li>Preparation for the Service based MNC hirings.</li>
-                                                <li>Last-minute preparation guideline for the interview</li>
-                                                <li>Discussion of the most popular interview questions(DSA).</li>
-                                                <li>Query & interactive session.</li>
-                                            </ol>
-                                            <hr/>
-                                            <p style = {{marginBottom: '1rem'}}><strong>Know the mentor</strong></p>
-                                            <p style = {{marginBottom: '1rem'}}><strong>Mr. Shashi Bhushan</strong></p>
-                                            <p>Worked with Adobe for about 2 years, Shashi Bhushan has sound knowledge of technologies like Java, Spring/Spring Boot, Hibernate, REST APIs, Python, Django, etc with a first-class hands-on of DSA. He graduated from NIT Allahabad in 2016 and worked for Paytm as a Software Engineer for a year. He is very passionate about Competitive Programming & Problem Solving. He is currently working as a Mentor at GeeksforGeeks.</p>
-                                            <hr/>
-                                            <p style = {{marginBottom: '1rem'}}><strong>FAQ</strong></p>
-                                            <ol>
-                                                <li>
-                                                    <strong>
-                                                        What is the timing of the workshop?
-                                                    </strong><br/>
-                                                    Placement Training and Resume Building Workshop will be a half day workshop from 10 AM to 1 PM
-                                                </li>
-                                                <li>
-                                                    <strong>
-                                                        Do we need to carry Laptops?
-                                                    </strong><br/>
-                                                    No, laptops won't be needed for this Workshop.
-                                                </li>
-                                                <li>
-                                                    <strong>
-                                                        Will lunch be provided?
-                                                    </strong><br/>
-                                                    No! Lunch won't be provided for Placement Workshop. However, many food courts will be present during Samhita.
-                                                </li>
-                                                <li>
-                                                    <strong>
-                                                        Can we bring our mobile chargers and other accessories?
-                                                    </strong><br/>
-                                                    Yes, absolutely. Feel free to carry your accessories.
-                                                </li>
-                                                <li>
-                                                    <strong>
-                                                        Do we need to bring note for jotting down the seminar?
-                                                    </strong><br/>
-                                                    Not necessary, we will provide each workshop participant with a workshop kit inclusive of NotePad, Pen and a File to carry it.
-                                                </li>
-                                                <li>
-                                                    <strong>
-                                                        Can we have a discussion with the Workshop Facilitator after the workshop?
-                                                    </strong><br/>
-                                                    Yes, you can have a Q&A Session with the Facilitator after the workshop session.
-                                                </li>
-                                            </ol>
-                                        </Drawer> */}
-                                    </div>
-                                </div>
-                                <section className = 'section'>
-                                    <div className = 'container'>
-                                        <div className ='field is-grouped workshop-detail-row'>
-                                            <div className = 'control workshop-detail-icon-1'>
-                                                <FontAwesomeIcon icon = {faCalendarAlt} size = 'lg' />
-                                            </div>
-                                            <div className ='control'>
-                                                <div className = 'subtitle is-5 is-lato workshop-detail'>
-                                                    April 25
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className ='field is-grouped workshop-detail-row'>
-                                            <div className = 'control workshop-detail-icon-2' style = {{marginLeft: '-5px'}} >
-                                                <FontAwesomeIcon icon = {faClock} size = 'lg'/>
-                                            </div>
-                                            <div className = 'subtitle is-5 is-lato workshop-detail'>
-                                                   4:30 PM - 6:30 PM
-                                                </div>
-                                        </div>
-                                        <div className ='field is-grouped workshop-detail-row'>
-                                            <div className = 'control workshop-detail-icon-3' style = {{marginLeft: '5px'}} >
-                                                <FontAwesomeIcon icon = {faRupeeSign} size = 'lg' />
-                                            </div>
-                                            <div className ='control'>
-                                                <Tooltip placement = 'right' title = {text}>
-                                                    <div className = 'subtitle is-5 is-lato workshop-detail'>
-                                                        FREE with the SAMHITA'22 ticket
-                                                    </div>
-                                                </Tooltip>
-                                            </div>
-                                        </div>
-                                         {/* <button className = 'button is-loading is-rounded is-link has-text-weight-semibold is-lato' style = {{backgroundColor: '#32A176'}} disabled onClick = {this.handleFreeWorkshop}>
-                                                        Buy for free
-                                                </button> */}
-                                        <div className = 'field is-grouped'>
-                                            <div className = 'control has-icons-right'>
-                                                {
-                                                    isLoading ? 
-                                             <p style={{fontSize:'18px',color:'red'}}><sup>*</sup>Registration opens Soon.</p>
-                                                   
-                                                
-                                                   :
-
-                                                    <button className = 'button is-rounded is-link has-text-weight-semibold is-lato' disabled onClick = {this.handleFreeWorkshop}>
-                                                        BUY
-                                                    </button>
-                                                } 
-                                                <p style={{fontSize:'18px',color:'red'}}><sup>*</sup>Registration opens Soon.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {/* <div className = 'subtitle is-6 is-lato has-text-weight-semibold has-text-danger' style = {{marginTop: '1rem'}}>*Onsite registrations are available for limited number of seats!. SO be quick to register once its open.</div> */}
-                                </section>
-                            </div>
-                        </div>
-                    </div>
+                    </div> */}
                 </section>
             </React.Fragment>
         )

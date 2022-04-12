@@ -171,7 +171,7 @@ class NonTechnical extends Component {
                                     prelims = '9 AM - 1 PM'
                                     finals = '2 PM - 4:30 PM'
                                     size = {3}
-                                    description = 'An avid fan of GOT,BRBA,MARVEL,DC and feeling left out in an IT symposium? Need not worry, we have got one for you too.First time in the history of Samhita, we give you a chance to join the Avengers but you have to prove to be worthy. Can you?'
+                                    description = 'An avid fan of GOT,BRBA,MARVEL,DC and feeling left out in an IT symposium? Need not to worry, we have got one for you too.First time in the history of Samhita, we give you a chance to join the Avengers but you have to prove to be worthy. Can you?'
                                     contactName = 'Kavin'
                                     contactNumber = {<><a href = 'tel:+918754530797'>+91 8754530797</a></>}
                                 >
@@ -196,8 +196,8 @@ class NonTechnical extends Component {
                                     treasureTime
                                     size = {3}
                                     description = 'Do you dream of being a Sherlock Holmes or a Jack Sparrow? This is your chance to become them. Hone those detective skills of yours & quench that thirst for treasure to achieve greater glory.'
-                                    contactName = 'Kanimozhhi'
-                                    contactNumber = {<><a href = 'tel:+91 9159693758'>+91 9159693758</a></>}
+                                    // contactName = ''
+                                    // contactNumber = {<><a href = 'tel:+917598365248'>+91 7598365248</a></>}
                                 >
                                     <div>
                                         <ul>

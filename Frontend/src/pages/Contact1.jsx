@@ -75,17 +75,6 @@ class Contact extends Component {
                                                          <a href = 'mailto: admin@samhita.org.in'>admin@samhita.org.in</a> */}
                                                     </li>
                                                     <li style = {{marginBottom: '15px'}}>
-                                                        Amruthavarshini R (<strong>Deputy Chairman</strong>)<br/>
-                                                        <span className = 'icon' style = {{marginLeft: '-6px', marginTop: '5px'}}>
-                                                            <FontAwesomeIcon icon = {faMobileAlt} />
-                                                        </span>
-                                                        <a href = 'tel: +919176941402'>9176941402</a><br/>
-                                                         {/*<span className = 'icon' style = {{position: 'relative', top: '3px',marginLeft: '-4px', marginRight: '2px'}}>
-                                                            <FontAwesomeIcon icon = {faEnvelope} />
-                                                        </span>
-                                                        <a href = 'mailto: workshop@samhita.org.in'>workshop@samhita.org.in</a> */}
-                                                    </li>
-                                                    <li style = {{marginBottom: '15px'}}>
                                                         Sachin S (<strong>Workshop coordinator</strong>)<br/>
                                                         <span className = 'icon' style = {{marginLeft: '-6px', marginTop: '5px'}}>
                                                             <FontAwesomeIcon icon = {faMobileAlt} />

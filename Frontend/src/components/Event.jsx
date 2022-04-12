@@ -52,12 +52,21 @@ class Event extends Component {
 
                             : gameTime ? 
 
-                            <div className = 'field' style = {{marginTop: '-10px'}}>
-                                <div className = 'control'>
-                                    <label className = 'label is-lato'>
-                                        Time: <span style = {{fontWeight: 'normal'}}>9:30 AM - 3 PM</span>
-                                    </label>
-                                </div>
+                            // <div className = 'field' style = {{marginTop: '-10px'}}>
+                            //     <div className = 'control'>
+                            //         <label className = 'label is-lato'>
+                            //             Time: <span style = {{fontWeight: 'normal'}}>9:30 AM - 3 PM</span>
+                            //         </label>
+                            //     </div>
+                            // </div>
+
+                            <div className = 'field is-grouped' style = {{marginTop: '-10px'}}>
+                            <div className = 'control'>
+                                <label className = 'label is-lato'>Time:</label>
+                            </div>
+                            <div className = 'control' style = {{marginTop: '2.5px', marginLeft: '-8px'}}>
+                                <div className = 'subtitle is-6 is-lato'> 9:30 AM - 3 PM</div>
+                            </div>
                             </div>
 
                             : treasureTime ?
@@ -72,12 +81,21 @@ class Event extends Component {
 
                             : eventTime ?
 
-                            <div className = 'field' style = {{marginTop: '-10px'}}>
-                                <div className = 'control'>
-                                    <label className = 'label is-lato'>
-                                        Time: <span style = {{fontWeight: 'normal'}}>9 AM - 1 PM</span>
-                                    </label>
-                                </div>
+                            // <div className = 'field' style = {{marginTop: '-10px'}}>
+                            //     <div className = 'control'>
+                            //         <label className = 'label is-lato'>
+                            //             Time: <span style = {{fontWeight: 'normal'}}>9 AM - 1 PM</span>
+                            //         </label>
+                            //     </div>
+                            // </div>
+
+                            <div className = 'field is-grouped' style = {{marginTop: '-10px'}}>
+                            <div className = 'control'>
+                                <label className = 'label is-lato'>Time:</label>
+                            </div>
+                            <div className = 'control' style = {{marginTop: '2.5px', marginLeft: '-8px'}}>
+                                <div className = 'subtitle is-6 is-lato'> 9 AM - 1 PM</div>
+                            </div>
                             </div>
 
                             : uxTime ?
