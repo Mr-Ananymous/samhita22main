@@ -354,6 +354,7 @@ class Profile extends Component {
                                         <button className = 'button is-lato has-text-weight-semibold is-rounded ' style={{background:"#1d9c9c"}} onClick = {() => this.props.history.push(`/checkout/${encryptedId}`)}>
                                             Get ticket
                                         </button>
+                                        <div className = 'subtitle is-6 is-lato has-text-weight-semibold has-text-danger' style = {{marginTop: '1rem'}}>*Registeration opens Soon.</div>
                                     </div>
                                 }
                             </div>

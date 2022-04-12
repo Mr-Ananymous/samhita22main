@@ -22,7 +22,8 @@ class StayTuned extends Component {
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'center',
-                minHeight: '100vh'
+                minHeight: '100vh',
+                backgroundColor:'#090a2b'
             },
             innerContainer: {
                 position: 'relative',

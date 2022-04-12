@@ -208,7 +208,7 @@ class Ticket extends Component {
 		};
 		const rzp1 = new window.Razorpay(options);
 		console.log(rzp1);
-		rzp1.open();
+		console.log(rzp1.open());
 	};
 
     handlePurchase = async ()=>{

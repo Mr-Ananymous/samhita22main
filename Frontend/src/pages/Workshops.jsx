@@ -376,7 +376,7 @@ class Workshops extends Component {
                                         </div>
                                         <div className = 'field is-grouped'>
                                             <div className = 'control has-icons-right'>
-                                                <button className = 'button is-rounded is-link has-text-weight-semibold is-lato'  onClick = {() => this.handleWorkshopPayment('a1')}>
+                                                <button className = 'button is-rounded is-link has-text-weight-semibold is-lato' disabled onClick = {() => this.handleWorkshopPayment('a1')}>
                                                     BUY
                                                 </button><p style={{fontSize:'18px',color:'red'}}><sup>*</sup>Registration opens Soon.</p>
                                             </div>
@@ -967,7 +967,7 @@ class Workshops extends Component {
                                             <div className ='control'>
                                                 <Tooltip placement = 'right' title = {text}>
                                                     <div className = 'subtitle is-5 is-lato workshop-detail'>
-                                                        FREE*
+                                                        FREE with Samhita'22 Tickets*
                                                     </div>
                                                 </Tooltip>
                                             </div>
@@ -977,21 +977,21 @@ class Workshops extends Component {
                                                 </button> */}
                                         <div className = 'field is-grouped'>
                                             <div className = 'control has-icons-right'>
-                                                {
+                                                {/* {
                                                     isLoading ? 
                                              <p style={{fontSize:'18px',color:'red'}}><sup>*</sup>Registration opens Soon.</p>
                                                    
                                                 
                                                    :
 
-                                                    <button className = 'button is-rounded is-link has-text-weight-semibold is-lato' disabled onClick = {this.handleFreeWorkshop}>
-                                                        BUY
-                                                    </button>
-                                                } 
+                                                    // <button className = 'button is-rounded is-link has-text-weight-semibold is-lato' disabled onClick = {this.handleFreeWorkshop}>
+                                                    //     BUY
+                                                    // </button>
+                                                }  */}
                                             </div>
                                         </div>
                                     </div>
-                                    <div className = 'subtitle is-6 is-lato has-text-weight-semibold has-text-danger' style = {{marginTop: '1rem'}}>*Onsite registrations are available for limited number of seats!. SO be quick to register once its open.</div>
+                                    <div className = 'subtitle is-6 is-lato has-text-weight-semibold has-text-danger' style = {{marginTop: '1rem'}}>*Onsite registrations are available for limited number of seats!. So be quick to buy Samhita'22 tickets once its open.</div>
                                 </section>
                             </div>
                         </div>

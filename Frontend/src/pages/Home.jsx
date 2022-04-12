@@ -234,6 +234,7 @@ class Home extends Component {
                                                 <FontAwesomeIcon icon = {faArrowRight} />
                                             </span>
                                         </button>
+                                        <div className = 'subtitle is-6 is-lato has-text-weight-semibold has-text-danger' style = {{marginTop: '1rem'}}>*Registeration opens Soon.</div>
                                     </div>
                                     <div className = 'control is-hidden-tablet'>
                                         <button className = 'button is-rounded is-lato has-text-weight-semibold is-danger' onClick = {() => this.props.history.push(`/checkout/${encryptedId}`)}>
@@ -242,6 +243,7 @@ class Home extends Component {
                                                 <FontAwesomeIcon icon = {faArrowRight} />
                                             </span>
                                         </button>
+                                        <div className = 'subtitle is-6 is-lato has-text-weight-semibold has-text-danger' style = {{marginTop: '1rem'}}>*Registeration opens Soon.</div>
                                     </div>
                                 </div>
                             </div>         
